@@ -1,0 +1,22 @@
+{
+  "name": "simulation-name",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_ENV=development npx esbuild src/main.ts index.html --loader:.html=copy --bundle --outdir=dist --serve=8081",
+    "build": "NODE_ENV=production npx esbuild src/main.ts index.html --loader:.html=copy --bundle --outdir=dist"
+  },
+  "dependencies": {
+    "scenerystack": "0.0.23"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2",
+    "eslint": "^9.17.0",
+    "@eslint/js": "^9.17.0",
+    "typescript-eslint": "^8.18.2",
+    "prettier": "^3.4.2",
+    "typescript": "~5.7.2",
+    "globals": "^15.14.0"
+  }
+}
