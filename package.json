@@ -8,7 +8,7 @@
     "build": "NODE_ENV=production npx esbuild src/main.ts index.html --loader:.html=copy --bundle --outdir=dist"
   },
   "dependencies": {
-    "scenerystack": "0.0.29"
+    "scenerystack": "0.0.30"
   },
   "devDependencies": {
     "esbuild": "^0.24.2",
