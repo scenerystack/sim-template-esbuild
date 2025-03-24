@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "NODE_ENV=development npx esbuild src/main.ts index.html --loader:.html=copy --bundle --outdir=dist --serve=8081",
-    "build": "NODE_ENV=production npx esbuild src/main.ts index.html --loader:.html=copy --bundle --outdir=dist"
+    "start": "NODE_ENV=development npx esbuild src/init.ts index.html --loader:.html=copy --bundle --outdir=dist --serve=8081",
+    "build": "NODE_ENV=production npx esbuild src/init.ts index.html --loader:.html=copy --bundle --outdir=dist"
   },
   "dependencies": {
     "scenerystack": "~1.0.0"
